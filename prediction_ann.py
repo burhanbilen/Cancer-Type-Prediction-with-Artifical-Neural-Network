@@ -36,7 +36,7 @@ model.add(Activation("relu"))
 
 model.compile(loss='mae', optimizer='sgd', metrics=['accuracy'])
 
-model.fit(X_train, Y_train, epochs=200, batch_size=16, validation_split=0.13)
+model.fit(X_train, Y_train, epochs=250, batch_size=16, validation_split=0.13)
 test_loss, test_acc = model.evaluate(X_test, Y_test)
 
 print('\nTest loss:', test_loss)
