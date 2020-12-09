@@ -40,7 +40,7 @@ model.fit(X_train, Y_train, epochs=250, batch_size=16, validation_split=0.13)
 test_loss, test_acc = model.evaluate(X_test, Y_test)
 
 predictions = model.predict(X_test[:])
-print('predictions shape:', predictions)
+print('prediction:', predictions)
 
 print('\nTest loss:', test_loss)
 print('Test accuracy:', test_acc)
